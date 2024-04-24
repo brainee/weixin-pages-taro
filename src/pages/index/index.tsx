@@ -4,6 +4,7 @@ import { AtButton } from 'taro-ui'
 
 import "taro-ui/dist/style/components/button.scss" // 按需引入
 import './index.scss'
+import Taro from '@tarojs/taro'
 
 export default class Index extends Component<PropsWithChildren> {
   componentDidMount () { }
@@ -18,9 +19,11 @@ export default class Index extends Component<PropsWithChildren> {
     return (
       <View className='index'>
         <Text>Hello world!</Text>
-        <AtButton type='primary'>I need Taro UI</AtButton>
+        <AtButton type='primary'>I need Taro UI,zy</AtButton>
         <Text>Taro UI 支持 Vue 了吗？</Text>
-        <AtButton type='primary' circle={true}>支持</AtButton>
+        <AtButton type='primary' circle={true} onClick={()=>{
+          Taro.showToast({title:'Hello',icon:'none'});
+        }}>支持</AtButton>
         <Text>共建？</Text>
         <AtButton type='secondary' circle={true}>来</AtButton>
       </View>
