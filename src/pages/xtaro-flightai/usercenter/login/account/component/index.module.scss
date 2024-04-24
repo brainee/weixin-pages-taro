@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #F6F8FA;
+}
+
+.scroll {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.t1{
+  width: 100px;
+  height: 200px;
+  background-color: red;
+}
+.t2{
+  width: 100px;
+  height: 200px;
+  background-color: green;
+}
+.box{
+  border: 1px solid red;
+  padding: 60px;
+}

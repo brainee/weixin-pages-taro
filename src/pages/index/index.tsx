@@ -1,10 +1,11 @@
 import { Component, PropsWithChildren } from 'react'
 import { View, Text } from '@tarojs/components'
 import { AtButton } from 'taro-ui'
+import Taro from '@tarojs/taro'
 
 import "taro-ui/dist/style/components/button.scss" // 按需引入
-import './index.scss'
-import Taro from '@tarojs/taro'
+import Style from './index.module.scss'
+// import Style from "./index.module.scss";
 
 export default class Index extends Component<PropsWithChildren> {
   componentDidMount () { }
@@ -18,7 +19,7 @@ export default class Index extends Component<PropsWithChildren> {
   render () {
     return (
       <View className='index'>
-        <Text>Hello world!</Text>
+        <Text className={Style.txt}>Hello world!</Text>
         <AtButton type='primary'>I need Taro UI,zy</AtButton>
         <Text>Taro UI 支持 Vue 了吗？</Text>
         <AtButton type='primary' circle={true} onClick={()=>{

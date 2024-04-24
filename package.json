@@ -30,7 +30,7 @@
     "dev:quickapp": "npm run build:quickapp -- --watch"
   },
   "browserslist": [
-    "last 3 versions",
+    "defaults and fully supports async-functions",
     "Android >= 4.1",
     "ios >= 8"
   ],
